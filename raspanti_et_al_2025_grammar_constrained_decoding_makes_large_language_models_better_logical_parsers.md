@@ -1,18 +1,16 @@
-# Paper: raspanti_et_al_2025_grammar_constrained_decoding_makes_large_language_models_better_logical_parsers
-* **Date:** $(date +%Y-%m-%d)
+# Paper:raspanti_et_al_2025_grammar_constrained_decoding_makes_large_language_models_better_logical_parsers
+* **Date:** 12/03/2026
 * **Source:**
   * **Link**: [Raspanti et al. GCD Makes LLMs Better Logical Parsers](https://aclanthology.org/2025.acl-industry.34/)
   * **Code Repo:** [https://github.com/federaspa/gcd-llm-logical-parsing](https://github.com/federaspa/gcd-llm-logical-parsing)
 
 
-## 📝 Summary
-- 
+## 📝 Summary 
 This paper decouples LLM reasoning from constrained decoding as previous papers have shown that the reasoning ability degrades if the LLM is constrained.
 They apply it for logical parsing, where the LLM only produces the input to the logical reasoning system. This way the actual reasoning is decoupled from the LLM.Their results indicate the GCD improves performance, especially for smaller models.
 
 
 ## 💡 Thoughts & Analysis
-- 
 * Test under different settings, I currently only consider 0-shot for BFCL, might also want to include few-shot.
 * For larger models they observe that the unconstrained version occasionally outperforms the constrained version. This is in line with what I observed. The question remains why?
 * They note the complementarity of GCD and ICL 
